@@ -1,0 +1,428 @@
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial;
+
+    }
+
+    .main_wrapper {
+
+        background-image: url('../images/background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+    }
+
+    .header_section {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .main_header_wrapper img {
+        width: 300px;
+        height: 250px;
+
+    }
+
+    .hero_image_wrapper {
+        width: 100%;
+        height: 280px;
+
+    }
+
+    .hero_image_wrapper img {
+        height: 100%;
+        width: 100%;
+
+    }
+
+
+
+    /* Arrow styling*/
+    .arrow_image {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .arrow_image img {
+        width: 8%;
+        display: block;
+        transform: scale(1.2);
+        height: 80px;
+
+    }
+
+    .arrow_wrapper {
+        position: relative;
+
+        width: 100%;
+        height: 210px;
+
+
+    }
+
+    .arrow,
+    .arrow:before {
+        position: absolute;
+        left: 50%;
+
+    }
+
+    .arrow {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 50%;
+        margin: 0px 0 0 -20px;
+        transform: rotate(45deg);
+        border-left: none;
+        border-top: none;
+
+        border-right: 10px red solid;
+        border-bottom: 10px red solid;
+    }
+
+    .arrow:before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        margin: -10px 0 0 -10px;
+        border-left: none;
+        border-top: none;
+        border-right: 5px red solid;
+        border-bottom: 5px red solid;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-name: arrow;
+    }
+
+    @keyframes arrow {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+            transform: translate(-10px, -10px);
+        }
+    }
+
+
+
+    /* Multi Step Form  */
+
+
+    #msform {
+        text-align: center;
+        position: relative;
+
+    }
+
+    #msform fieldset {
+        background: white;
+        border: 0 none;
+        border-radius: 0.5rem;
+        box-sizing: border-box;
+        box-shadow: 3px #ffffff;
+        margin: 0;
+        padding-bottom: 10px;
+        position: relative
+    }
+
+
+    #msform fieldset:not(:first-of-type) {
+        display: none
+    }
+
+    #msform input {
+        padding: 8px 10px 8px 10px;
+        border: 1px solid #ccc;
+        border-radius: 0px;
+        margin-bottom: 25px;
+        margin-top: 2px;
+        width: 100%;
+        box-sizing: border-box;
+        font-family: montserrat;
+        color: #2C3E50;
+        background-color: #ECEFF1;
+        font-size: 16px;
+        letter-spacing: 1px
+    }
+
+    #msform input::-webkit-outer-spin-button,
+    #msform input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    #msform input:focus,
+    #msform textarea:focus {
+
+        -moz-box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        border: 1px solid #37CC35;
+        outline-width: 0
+    }
+
+
+    #msform .action-button {
+        width: 100px;
+        background: #37CC35;
+        font-weight: bold;
+        color: white;
+        border: 0 none;
+        border-radius: 0px;
+        cursor: pointer;
+        padding: 10px 5px;
+        margin: 10px 30px 10px 5px;
+        float: right;
+        text-transform: uppercase;
+
+    }
+
+    #msform .action-button:hover,
+    #msform .action-button:focus {
+        background-color: #37CC35;
+    }
+
+    #msform .action-button-previous {
+        width: 100px;
+        background: #616161;
+        font-weight: bold;
+        color: white;
+        border: 0 none;
+        border-radius: 0px;
+        cursor: pointer;
+        padding: 10px 5px;
+        margin: 10px 5px 10px 0px;
+        float: right
+    }
+
+    #msform .action-button-previous:hover,
+    #msform .action-button-previous:focus {
+        background-color: #000000
+    }
+
+
+    .card_setting {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        height: 100%;
+
+    }
+
+    .step_heading {
+        text-align: center;
+        color: #37CC35;
+        padding: 15px;
+        font-size: 36px;
+        font-weight: bold;
+        font-family: Montserrat;
+        color: #E74C3C;
+    }
+
+    .custom_card_inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        margin: 10px;
+    }
+
+    .custom_card_inner img {
+        width: 200px;
+        padding: 10px;
+        height: 200px;
+    }
+
+    .custom_card_inner:hover {
+        transform: scale(0.9);
+        background-color: #37CC35;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+
+    }
+
+
+
+    .fs-title {
+        font-size: 25px;
+        color: #673AB7;
+        margin-bottom: 15px;
+        font-weight: normal;
+        text-align: left
+    }
+
+    .purple-text {
+        color: #673AB7;
+        font-weight: normal
+    }
+
+    .steps_settings span {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-family: roboto;
+    }
+
+
+    .steps_settings {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .fieldlabels {
+        color: gray;
+        text-align: left
+    }
+
+    #progressbar {
+        margin-bottom: 30px;
+        overflow: hidden;
+        color: lightgrey
+    }
+
+    #progressbar .active {
+        color: #37CC35
+    }
+
+    #progressbar li {
+        list-style-type: none;
+        font-size: 15px;
+        width: 25%;
+        float: left;
+        position: relative;
+        font-weight: 400
+    }
+
+    #progressbar #account:before {
+        font-family: FontAwesome;
+        content: "\f13e"
+    }
+
+    #progressbar #personal:before {
+        font-family: FontAwesome;
+        content: "\f007"
+    }
+
+    #progressbar #payment:before {
+        font-family: FontAwesome;
+        content: "\f030"
+    }
+
+    #progressbar #confirm:before {
+        font-family: FontAwesome;
+        content: "\f00c"
+    }
+
+    #progressbar li:before {
+        width: 50px;
+        height: 50px;
+        line-height: 45px;
+        display: block;
+        font-size: 20px;
+        color: #ffffff;
+        background: lightgray;
+        border-radius: 50%;
+        margin: 0 auto 10px auto;
+        padding: 2px
+    }
+
+    #progressbar li:after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: lightgray;
+        position: absolute;
+        left: 0;
+        top: 25px;
+        z-index: -1
+    }
+
+    #progressbar li.active:before,
+    #progressbar li.active:after {
+        background: #37CC35
+    }
+
+    .progress {
+        height: 20px
+    }
+
+    .progress-bar {
+        background-color: #37CC35;
+    }
+
+    .fit-image {
+        width: 100%;
+        object-fit: cover
+    }
+
+    .footer_wrapper h2 {
+        width: 100%;
+        font-size: 36px;
+        font-family: montserrat;
+        color: white;
+
+    }
+
+    .footer_images {
+
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    .footer_image_left {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+
+    }
+
+    .footer_images img {
+        width: 75%;
+    }
+
+    .footer_content p {
+        padding: 20px 250px;
+        font-size: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #869AB8;
+        text-align: center;
+
+    }
+
+    .copyright_settings {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-right: 100px;
+    }
+
+    .copyright_settings span {
+        font-size: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #869AB8;
+        padding: 20px;
+
+    }
